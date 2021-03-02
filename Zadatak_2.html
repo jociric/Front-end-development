@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Advanced CSS - Assignment 2</title>
+<style>
+body {background-color:#050210;}
+#div{margin:15% auto;
+width:310px;
+height:310px;
+background:linear-gradient(to right,#fb5dad,#55fb9f,#b97aff);
+border:hidden;
+border-radius:100%;
+box-shadow:6px -6px 50px #fb5dad,
+-6px 6px 50px #55fb9f,
+6px 6px 50px #b97aff;
+}
+#div{animation-name:animation;
+animation-duration:1s;
+animation-timing-function:linear;
+animation-iteration-count:infinite;}
+#div2 {background-color:#050210;
+position:absolute;
+left:510px;
+top:210px;
+width:275px;
+height:275px;
+border:hidden;
+border-radius:100%;}
+#div3{background-color:#050210;
+width:274px;
+height:274px;
+border:hidden;
+border-radius:100%;
+animation-name:animation2;
+animation-duration:1.5s;
+animation-iteration-count:infinite;
+animation-direction:normal;
+animation-timing-function:ease-in;
+}
+@keyframes animation{
+0%{transform:rotate(0deg);}
+10%{transform:rotate(35deg);}
+20%{transform:rotate(70deg);}
+30%{transform:rotate(105deg);}
+40%{transform:rotate(140deg);}
+50%{transform:rotate(175deg);}
+60%{transform:rotate(210deg);}
+70%{transform:rotate(245deg);}
+80%{transform:rotate(280deg);}
+90%{transform:rotate(320deg);}
+100%{transform:rotate(360deg);}} 
+@keyframes animation2{
+0%{filter:brightness(1)opacity(1);transform:scale(0.2);}
+30%{filter:brightness(2)opacity(1)blur(5px);transform:scale(0.3);}
+60%{filter:brightness(2)opacity(1)blur(4px);transform:scale(0.6);}
+80%{filter:brightness(2)opacity(0.9)blur(3px);transform:scale(0.8);}
+90%{filter:brightness(2)opacity(0.9)blur(2px);transform:scale(0.9);}
+90%{filter:brightness(2)opacity(0.8)blur(1px);transform:scale(1);}
+100%{filter:brightness(2)opacity(0.7)blur(1px);transform:scale(1);}}
+</style>
+</head>
+<body>
+<div id="div">
+</div>
+<div id="div2"><div id="div3"></div>
+</div>
+</body>
+</html>
