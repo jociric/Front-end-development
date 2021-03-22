@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Galerija</title>
+<style>
+#grid{display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+}
+#grid>div{width:200px;
+height:150px;
+background-image: url("placeholder-image.png"),
+linear-gradient(rgba(0, 64, 255, 0.7)70%,transparent 50%); 
+background-size:contain;
+padding:7px;
+margin:10px;
+border-bottom:1px solid gray;
+border-radius:10px;
+}
+#grid>div::after{content:"Image Title";
+background-color:transparent;
+font-size:24px;
+padding:30px;
+margin:10px;
+position:relative;
+top:80%;
+}
+p{max-width:100vmax;}
+@media screen and (max-width: 1024px) {
+#grid {
+grid-template-columns: repeat(3,1fr);
+}
+}
+ 
+@media screen and (max-width: 768px) {
+#grid {
+grid-template-columns: repeat(2,1fr);
+}
+}
+ 
+@media screen and (max-width: 500px) {
+#grid {
+grid-template-columns: repeat(1,1fr);
+}
+}
+</style>
+</head>
+<body>
+<h1>Galery Heading</h1>
+<div id="grid">
+<div></div> 
+<div></div>
+<div></div> 
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus cras adipiscing enim eu turpis egestas pretium aenean. Quis risus sed vulputate odio ut enim blandit. Venenatis urna cursus eget nunc scelerisque. Ac auctor augue mauris augue neque gravida in fermentum et. Ut lectus arcu bibendum at varius vel. Nibh tortor id aliquet lectus. Fringilla est ullamcorper eget nulla facilisi etiam. Odio euismod lacinia at quis risus sed vulputate odio ut. Montes nascetur ridiculus mus mauris vitae ultricies leo. Faucibus interdum posuere lorem ipsum dolor sit.</p>
+</body>
+</html>
